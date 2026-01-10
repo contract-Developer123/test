@@ -50,7 +50,7 @@ jobs:
           fail-on-vulnerability: 'false'
           fail-on-misconfiguration: 'false'
           fail-on-secret: 'false'
+          nt-api-endpoint: 'https://dev.neoTrak.io'
         env:
           NT_API_KEY: ${{ secrets.NT_API_KEY }}
           NT_SECRET_KEY: ${{ secrets.NT_SECRET_KEY }}
-          nt-api-endpoint: 'https://dev.neoTrak.io'

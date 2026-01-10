@@ -34,3 +34,22 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      # GitHub Actions workflow
+
+  security-scan:  
+    name: Run Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: NeoTrack Security Scan
+        uses: openpulsetech/neotrak-action@main
+        with:
+          fail-on-vulnerability: 'false'
+          fail-on-misconfiguration: 'false'
+          fail-on-secret: 'false'
+        env:
+          NT_API_KEY: ${{ secrets.NT_API_KEY }}
+          NT_SECRET_KEY: ${{ secrets.NT_SECRET_KEY }}

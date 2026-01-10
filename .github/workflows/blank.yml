@@ -53,4 +53,4 @@ jobs:
         env:
           NT_API_KEY: ${{ secrets.NT_API_KEY }}
           NT_SECRET_KEY: ${{ secrets.NT_SECRET_KEY }}
-          NT_API_ENDPOINT: 'https://dev.neoTrak.io'
+          nt-api-endpoint: 'https://dev.neoTrak.io'

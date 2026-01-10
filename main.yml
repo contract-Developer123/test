@@ -1,6 +1,6 @@
 # GitHub Actions workflow
 jobs:
-  security-scan:
+  security-scan:  
     name: Run Security Scan
     runs-on: ubuntu-latest
 

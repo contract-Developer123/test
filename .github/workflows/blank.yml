@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: NeoTrack Security Scan
-        uses: openpulsetech/neotrak-action@feature
+        uses: openpulsetech/neotrak-action@main
         with:
           fail-on-vulnerability: 'false'
           fail-on-misconfiguration: 'false'

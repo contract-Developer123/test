@@ -1,6 +1,6 @@
-# GitHub Actions workflow
+# Add to the existing action yaml:
 jobs:
-  security-scan:  
+  security-scan:
     name: Run Security Scan
     runs-on: ubuntu-latest
 
@@ -9,11 +9,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: NeoTrack Security Scan
-        uses: openpulsetech/neotrak-action@main
+        uses: openpulsetech/neotrak-action@feature
         with:
           fail-on-vulnerability: 'false'
           fail-on-misconfiguration: 'false'
           fail-on-secret: 'false'
         env:
-          NT_API_KEY: ${{ secrets.NT_API_KEY }}
-          NT_SECRET_KEY: ${{ secrets.NT_SECRET_KEY }}
+          NT_API_KEY: MTc3MzI0NTc4NjM4MzoxYjdjNzZhNi00MzcwLTQ5OWItYjdkYS0zZTFmMjI2M2E5M2U6NzNkYzE5YTktN2FlYy00OTA1LWJhMGEtNDZmMmZiZGM0M
+          NT_SECRET_KEY: sEPZ35IcYbLEfJBN9zpBtTyshzpukyyGIRxTs2dZOy4
